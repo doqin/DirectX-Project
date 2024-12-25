@@ -1,5 +1,8 @@
 #include "pch.h"
 #include "Application.h"
+#include "Platform/WIN32/WinEntry.h"
+
+ENTRYAPP(Application)
 
 Application::Application()
 {
@@ -11,10 +14,10 @@ Application::~Application()
 
 VOID Application::Initialize()
 {
-	return VOID();
+	MessageBox(0, L"I have Loaded Up!", 0, 0);
 }
 
 VOID Application::Update()
 {
-	return VOID();
+	MessageBox(0, L"I am Running!", 0, 0);
 }

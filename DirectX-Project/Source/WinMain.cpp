@@ -43,7 +43,7 @@ LRESULT CALLBACK WindowProcess(HWND hWnd, UINT message, WPARAM wParam, LPARAM lp
 /*-------------------------------------------------*/
 
 #pragma region Operations
-
+/*
 int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT) {
 
 	InitializeVariables();
@@ -56,6 +56,7 @@ int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT) {
 
 	return 0;
 }
+*/
 
 LRESULT CALLBACK WindowProcess(HWND hWnd, UINT message, WPARAM wParam, LPARAM lparam) {
 	switch (message) {
