@@ -14,6 +14,10 @@ public:
 	~Application();
 
 public:
+
+	// Called to Setup Per Game Settings
+	VOID SetupPerGameSettings();
+
 	// Called to Initialize the Application
 	VOID Initialize();
 

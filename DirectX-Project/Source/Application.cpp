@@ -12,9 +12,21 @@ Application::~Application()
 {
 }
 
-VOID Application::Initialize()
+VOID Application::SetupPerGameSettings()
 {
-	MessageBox(0, L"I have Loaded Up!", 0, 0);
+	// Set Per Game Settings
+	PerGameSettings::SetGameName(IDS_PERGAMENAME);
+	PerGameSettings::SetShortName(IDS_SHORTNAME);
+	PerGameSettings::SetMainIcon(IDI_MAINICON);
+}
+
+VOID Application::Initialize()
+{	
+	Logger::PrintDebugSeparator();
+	Logger::PrintLog(L"Application starting...\n");
+	Logger::PrintLog(L"Game Name: %s\n", PerGameSettings::GameName());
+	Logger::PrintLog(L"Boot Time: % s\n", Time::GetDateTimeString().c_str());
+	Logger::PrintDebugSeparator();
 }
 
 VOID Application::Update()

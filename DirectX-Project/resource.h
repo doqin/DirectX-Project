@@ -5,6 +5,7 @@
 #define IDI_MAINICON                    101
 #define IDS_PERGAMENAME                 102
 #define IDS_WINDOWCLASS                 103
+#define IDS_SHORTNAME                   104
 
 // Next default values for new objects
 // 

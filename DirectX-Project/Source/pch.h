@@ -8,3 +8,5 @@
 #define HInstance() GetModuleHandle(NULL)
 
 #include "RhodoEngine.h"
+
+#include "Common/Logger.h"
