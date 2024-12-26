@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RhodoEngine", "RhodoEngine\RhodoEngine.vcxproj", "{C19AC556-09A5-433D-A069-A6EEF6B4C61D}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectX-Project", "DirectX-Project\DirectX-Project.vcxproj", "{14D1E566-31AD-4AD9-9BAF-8F6DE9B0E8B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rhodo", "Rhodo\Rhodo.vcxproj", "{C19AC556-09A5-433D-A069-A6EEF6B4C61D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +15,6 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Debug|ARM64.ActiveCfg = Debug|ARM64
-		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Debug|ARM64.Build.0 = Debug|ARM64
-		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Debug|x64.ActiveCfg = Debug|x64
-		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Debug|x64.Build.0 = Debug|x64
-		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Release|ARM64.ActiveCfg = Release|ARM64
-		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Release|ARM64.Build.0 = Release|ARM64
-		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Release|x64.ActiveCfg = Release|x64
-		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Release|x64.Build.0 = Release|x64
 		{14D1E566-31AD-4AD9-9BAF-8F6DE9B0E8B5}.Debug|ARM64.ActiveCfg = Debug|ARM64
 		{14D1E566-31AD-4AD9-9BAF-8F6DE9B0E8B5}.Debug|ARM64.Build.0 = Debug|ARM64
 		{14D1E566-31AD-4AD9-9BAF-8F6DE9B0E8B5}.Debug|x64.ActiveCfg = Debug|x64
@@ -31,6 +23,14 @@ Global
 		{14D1E566-31AD-4AD9-9BAF-8F6DE9B0E8B5}.Release|ARM64.Build.0 = Release|ARM64
 		{14D1E566-31AD-4AD9-9BAF-8F6DE9B0E8B5}.Release|x64.ActiveCfg = Release|x64
 		{14D1E566-31AD-4AD9-9BAF-8F6DE9B0E8B5}.Release|x64.Build.0 = Release|x64
+		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Debug|ARM64.Build.0 = Debug|ARM64
+		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Debug|x64.ActiveCfg = Debug|x64
+		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Debug|x64.Build.0 = Debug|x64
+		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Release|ARM64.ActiveCfg = Release|ARM64
+		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Release|ARM64.Build.0 = Release|ARM64
+		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Release|x64.ActiveCfg = Release|x64
+		{C19AC556-09A5-433D-A069-A6EEF6B4C61D}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

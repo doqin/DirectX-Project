@@ -1,4 +1,4 @@
-#include "RhodoEngine.h"
+#include "Rhodo.h"
 #include <fstream>
 #include <ShlObj.h>
 
@@ -39,7 +39,7 @@ VOID Logger::PrintLog(const WCHAR* fmt, ...)
 	}
 }
 
-// Get and Create Log Directory at %AppData%/$(ApplicationName)/Log
+// Get and Create Log Directory at %AppData%/Roaming/$(ApplicationName)/Log
 std::wstring Logger::LogDirectory()
 {
 	WCHAR Path[1024];

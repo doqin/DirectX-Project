@@ -88,12 +88,15 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>$(SolutionDir)\RhodoEngine\Source;$(SolutionDir)\DirectX-Project\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rhodo\Source;$(SolutionDir)\DirectX-Project\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>copy $(SolutionDir)\Build\Rhodo\$(Platform)\$(Configuration)\Rhodo.dll $(OutDir)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -159,7 +162,7 @@
     <Image Include="Content\Icons\icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RhodoEngine\RhodoEngine.vcxproj">
+    <ProjectReference Include="..\Rhodo\Rhodo.vcxproj">
       <Project>{c19ac556-09a5-433d-a069-a6eef6b4c61d}</Project>
     </ProjectReference>
   </ItemGroup>

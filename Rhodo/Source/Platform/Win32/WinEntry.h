@@ -1,7 +1,9 @@
-#include "RhodoEngine.h"
-#include "IApplication.h"
+#include "Rhodo.h"
 
-extern IApplication* EntryApplication();
+#include "IApplication.h"
+#include "Common/CmdLineArgs.h"
+
+extern Win32::IApplication* EntryApplication();
 
 int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT) {
 
@@ -9,6 +11,8 @@ int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT) {
 
 	PerGameSettings GameSettings;
 	EntryApp->SetupPerGameSettings();
+
+	CmdLineArgs::ReadArguments();
 
 	Logger logger;
 	EntryApp->Initialize();

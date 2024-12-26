@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Platform/WIN32/IApplication.h"
+#include "Engine/Simulation.h"
 
-class Application : public IApplication {
+class Application : public Rhodo::Simulation {
 
 	// Application
 

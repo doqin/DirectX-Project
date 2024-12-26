@@ -87,8 +87,8 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <PrecompiledHeader>Create</PrecompiledHeader>
-      <PrecompiledHeaderFile>RhodoEngine.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)\RhodoEngine\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>Rhodo.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rhodo\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -143,19 +143,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Common\CmdLineArgs.cpp" />
     <ClCompile Include="Source\Common\Logger.cpp" />
     <ClCompile Include="Source\Common\Time.cpp" />
+    <ClCompile Include="Source\Core\Core.cpp" />
+    <ClCompile Include="Source\Core\CoreDefinitions.cpp" />
+    <ClCompile Include="Source\Core\CoreMinimal.cpp" />
     <ClCompile Include="Source\Core\PerGameSettings.cpp" />
+    <ClCompile Include="Source\Engine\REngine.cpp" />
+    <ClCompile Include="Source\Engine\Simulation.cpp" />
     <ClCompile Include="Source\Platform\WIN32\IApplication.cpp" />
-    <ClCompile Include="Source\RhodoEngine.cpp" />
+    <ClCompile Include="Source\Rhodo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Common\CmdLineArgs.h" />
     <ClInclude Include="Source\Common\Logger.h" />
     <ClInclude Include="Source\Common\Time.h" />
+    <ClInclude Include="Source\Core\Core.h" />
+    <ClInclude Include="Source\Core\CoreDefinitions.h" />
+    <ClInclude Include="Source\Core\CoreMinimal.h" />
     <ClInclude Include="Source\Core\PerGameSettings.h" />
+    <ClInclude Include="Source\Engine\REngine.h" />
+    <ClInclude Include="Source\Engine\Simulation.h" />
     <ClInclude Include="Source\Platform\WIN32\IApplication.h" />
     <ClInclude Include="Source\Platform\WIN32\WinEntry.h" />
-    <ClInclude Include="Source\RhodoEngine.h" />
+    <ClInclude Include="Source\Rhodo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
