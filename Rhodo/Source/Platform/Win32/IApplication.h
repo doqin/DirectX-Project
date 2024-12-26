@@ -19,6 +19,9 @@ namespace Win32 {
 		// Called to Setup Per Game Settings
 		virtual VOID SetupPerGameSettings() = 0;
 
+		// Called to PreInitialize the Application
+		virtual VOID PreInitialize() = 0;
+
 		// Called to Initialize the Application
 		virtual VOID Initialize() = 0;
 

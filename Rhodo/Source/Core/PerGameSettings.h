@@ -18,6 +18,7 @@ private:
 	WCHAR m_ShortName[MAX_NAME_STRING];
 	HICON m_MainIcon;
 	WCHAR m_BootTime[MAX_NAME_STRING];
+	WCHAR m_SplashURL[MAX_NAME_STRING];
 
 public:
 	// Access Getters and Setters
@@ -31,4 +32,7 @@ public:
 	static VOID SetMainIcon(UINT id) { LoadIcon(HInstance(), MAKEINTRESOURCE(id)); }
 
 	static WCHAR* BootTime() { return inst->m_BootTime; }
+
+	static WCHAR* SplashURL() { return inst->m_SplashURL; }
+	static VOID SetSplashURL(UINT id) { LoadString(HInstance(), id, inst->m_SplashURL, MAX_NAME_STRING); }
 };

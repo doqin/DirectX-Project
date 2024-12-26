@@ -152,7 +152,11 @@
     <ClCompile Include="Source\Core\PerGameSettings.cpp" />
     <ClCompile Include="Source\Engine\REngine.cpp" />
     <ClCompile Include="Source\Engine\Simulation.cpp" />
+    <ClCompile Include="Source\Engine\SplashScreen.cpp" />
     <ClCompile Include="Source\Platform\WIN32\IApplication.cpp" />
+    <ClCompile Include="Source\Platform\Win32\SubObject.cpp" />
+    <ClCompile Include="Source\Platform\Win32\Win32Utils.cpp" />
+    <ClCompile Include="Source\Platform\Win32\Window.cpp" />
     <ClCompile Include="Source\Rhodo.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -165,7 +169,11 @@
     <ClInclude Include="Source\Core\PerGameSettings.h" />
     <ClInclude Include="Source\Engine\REngine.h" />
     <ClInclude Include="Source\Engine\Simulation.h" />
+    <ClInclude Include="Source\Engine\SplashScreen.h" />
     <ClInclude Include="Source\Platform\WIN32\IApplication.h" />
+    <ClInclude Include="Source\Platform\Win32\SubObject.h" />
+    <ClInclude Include="Source\Platform\Win32\Win32Utils.h" />
+    <ClInclude Include="Source\Platform\Win32\Window.h" />
     <ClInclude Include="Source\Platform\WIN32\WinEntry.h" />
     <ClInclude Include="Source\Rhodo.h" />
   </ItemGroup>

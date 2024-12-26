@@ -85,7 +85,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Create</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>DirectX-Project.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <AdditionalIncludeDirectories>$(SolutionDir)\Rhodo\Source;$(SolutionDir)\DirectX-Project\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -146,14 +146,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Application.cpp" />
-    <ClCompile Include="Source\pch.cpp" />
-    <ClCompile Include="Source\WinMain.cpp" />
+    <ClCompile Include="Source\DirectX-Project.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Source\Application.h" />
-    <ClInclude Include="Source\pch.h" />
+    <ClInclude Include="Source\DirectX-Project.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DirectX-Project.rc" />
